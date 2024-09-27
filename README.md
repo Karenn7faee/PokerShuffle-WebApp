@@ -2,6 +2,9 @@
 
 Poker suffle is a react web-app game.
 
+[A playable version is available on my portfolio page ](https://poker-suffle-react.karenfae-laurin.com/)
+I am still adding more features as this project is my way of learning more about React and TypeScipt.
+
 ## Installation
 
 Like any Vite-react app, after pulling project
