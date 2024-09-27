@@ -1,50 +1,43 @@
-# React + TypeScript + Vite
+# Poker suffle
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Poker suffle is a react web-app game.
 
-Currently, two official plugins are available:
+## Installation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Like any Vite-react app, after pulling project
+to run locally :
 
-## Expanding the ESLint configuration
+- npm install
+- npm run dev
+- open the //localhost:port givin
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+to run on website :
 
-- Configure the top-level `parserOptions` property like this:
+- npm install
+- npm run build
+- add contents from dist folder to webpage
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## How to play
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Place all 25 cards from the stack pile onto the board.
+You may shuffle cards as much as you like until the board is full, marking the end of the game.
+Making classic poker combination makes more points. The score is summed from rows and columns.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- Royal straight flush : 100 points
+- Straight flush : 75 points
+- Straight : 20 points
+- Flush : 15 points
+- Four of a kind : 50 points
+- Fullhouse : 25 points
+- Brelan : 10 points
+- 2 pairs : 5 points
+- 1 pair : 2 points
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Contributing
+
+The game was givin as an assignment in a progamming class at Université de Montréal.
+Originally made in python with an IDE build by the university. Not having access to this tool anymore,
+the visual aspects to the original code aren't functionnal anymore. This is my first React app
+to learn about web-apps and TypeScript.
+
+Any feedback is appreciated.
