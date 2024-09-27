@@ -1,0 +1,43 @@
+.card {
+    position: relative;
+}
+
+.card img {
+    padding:1px;
+    width: 100%;
+    display: block;
+    border-radius: 6px;
+}
+
+/* front card - the picture */
+.card .front {
+    transform: rotateY(90deg);
+    transition: all ease-in 0.03sec;
+    position: absolute;
+}
+
+.flipped .front {
+    transform: rotateY(0deg);
+    transition-delay: 0.03s; 
+}
+
+/* back card - cover */
+.card .back {
+    transition: all ease-in 0.03s;
+}
+
+.flipped .back {
+    transform: rotateY(90deg);
+}
+
+.unselected {
+    border: 3px solid #fff;
+}
+
+.unselected:hover{
+    border: 3px solid #13b055;
+}
+
+.selected {
+    border: 3px solid #c23866;
+}
